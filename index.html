@@ -4,44 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Small IMG slider</title>
+    <title>Small Image Switch</title>
 </head>
 
 <body>
 
     <img src='images/image001.jpg' id='slider'>
 
-    <script>
-
-        let sliderImages = [];
-        let i = 0;
-
-        console.log(slider);
-
-        // list of images
-        sliderImages[0] = 'images/image001.jpg';
-        sliderImages[1] = 'images/image002.jpg';
-        sliderImages[2] = 'images/image003.jpg';
-
-        console.log(sliderImages.length);
-        
-        function changeImage() {
-
-            let slider = document.getElementById("slider");
-            let timer = 500;
-            
-            slider.src = sliderImages[i];
-            
-            if ( i < sliderImages.length - 1 ) { i++; } 
-            else { i = 0; };
-
-            setTimeout("changeImage()" , timer);
-
-        };
-
-        window.onload = changeImage;
-
-    </script>
+    <script src="script.js"></script>
 
 </body>
 </html>
